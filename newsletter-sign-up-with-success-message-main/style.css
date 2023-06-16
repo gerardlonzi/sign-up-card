@@ -1,0 +1,188 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color:  hsl(235, 18%, 26%);
+    font-family: "Roboto",sans-serif;
+    color: hsl(235, 18%, 26%);
+}
+.block{
+    border-radius: 23px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 830px
+}
+img{
+    width: 100%;
+}
+.part1{
+    padding:60px 40px ;
+    
+}
+.seg1 h1{
+    font-size: 45px;
+}
+.seg1 p{
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+.seg2 p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ask{
+    display: flex;
+    flex-direction: row;
+    gap: 122px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.seg2 i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.seg3 input{
+    display: block;
+    outline: 0;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 340px;
+    gap: 20px;
+}
+.email{
+    border: solid 1px gray;
+    border-radius: 6px;
+    margin-top: 5px;
+
+}
+.email::placeholder{
+    color: hsl(231, 7%, 60%);
+    padding-left: 10px;
+}
+.bottom{
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 0;
+    outline: 0;
+    transition: .4s ease;
+}
+.bottom:hover{
+    background: linear-gradient(100deg,hsl(340, 100%, 54%), hsl(4, 98%, 55%) );
+    box-shadow: 2px 15px 30px hsl(340, 100%, 84%);
+}
+.seg3 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+label{
+    font-size: 12px;
+}
+.part2 img{
+    border-radius: 15px;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.valit{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 465px;
+    background-color: white;
+    padding:40px 45px 40px 45px;
+    border-radius: 23px;
+    display: none;
+
+}
+.valit p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.chech i{
+    font-size: 65px;
+    color: hsl(4, 100%, 67%) ;
+}
+.valit span{
+    font-weight: bold;
+}
+.valit h1{
+    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.valit input{
+    border: 0;
+    color: white;
+    background-color: rgb(19, 37, 63);
+    border-radius: 6px;
+    width: 375px;
+    padding: 17px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    transition: .4s ease;
+}
+.valit input:hover{
+    background: linear-gradient(100deg,hsl(340, 100%, 54%), hsl(4, 98%, 55%) );
+    box-shadow: 2px 15px 30px hsl(340, 100%, 84%);
+}
+.reponse {
+    color: red;
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-width :750px) {
+    .block{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 0;
+        border-radius: 0px;
+        }
+    .block{
+        padding: 0px;
+    }    
+    .part2 img{
+        height: 370px;
+        width: 100%;
+
+    } 
+    .seg3 input{
+        width: 300px;
+        padding: 14;
+    }
+    .valit{
+        width: 90%;
+        height: 100vh;
+        border-radius: 0px;
+        margin: auto;
+    }
+    .valit input{
+      margin-top: 250px;
+      width: 300px;
+        padding: 14;
+    }
+}
